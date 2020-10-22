@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('permisos', 'PermisoController');
+
+//Route::view('permisos/{nombre}', 'permiso.index');
