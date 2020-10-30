@@ -63,9 +63,12 @@
 <script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
+@yield("scriptsPlugins")
+    <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
+    <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+<script src="{{asset("assets/js/funciones.js")}}"></script>
+@yield("scripts")
 <!-- AdminLTE for demo purposes -->
-ç
-@yield('scripts')
 <script>
     $(function () {
       $('#example1').DataTable()
