@@ -33,8 +33,8 @@
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
-    <!-- Site wrapper -->
+<body class="hold-transition skin-blue layout-boxed sidebar-mini">
+        <!-- Site wrapper -->
     <div class="wrapper">
         <!--Inicio Header -->
         @include("theme/$theme/header")
@@ -64,11 +64,14 @@
 <!-- AdminLTE App -->
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
 @yield("scriptsPlugins")
-    <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
-    <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+<script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
+<script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="{{asset("assets/js/scripts.js")}}"></script>
 <script src="{{asset("assets/js/funciones.js")}}"></script>
 @yield("scripts")
-<!-- AdminLTE for demo purposes -->
+<!-- AdminLTE for demo purposes
 <script>
     $(function () {
       $('#example1').DataTable()
@@ -82,7 +85,8 @@
       })
     })
   </script>
-
+-->
 </body>
 
 </html>
+public\assets\js\jquery-validation\jquery.validate.min.js
