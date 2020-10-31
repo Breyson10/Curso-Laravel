@@ -19,16 +19,16 @@ Menú
 <div class="row">
     <div class="col-lg-12">
         @include('includes.mensaje')
-        <div class="card card-info">
-            <div class="card-header">
-                <h3 class="card-title">Menús</h3>
-                <div class="card-tools">
+        <div class="box box-info">
+            <div class="box-header">
+                <h3 class="box-title">Menús</h3>
+                <div class="box-tools">
                     <a href="{{route('crear_menu')}}" class="btn btn-outline-secondary btn-sm">
                         <i class="fa fa-fw fa-plus-circle"></i> Crear menú
                     </a>
                 </div>
             </div>
-            <div class="card-body">
+            <div class="box-body">
                 @csrf
                 <div class="dd" id="nestable">
                     <ol class="dd-list">
