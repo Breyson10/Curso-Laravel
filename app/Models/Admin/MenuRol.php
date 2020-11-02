@@ -9,4 +9,6 @@ class MenuRol extends Model
     protected $table = 'menu_rol';
     public $timestamp = false;
 
+
+
 }
